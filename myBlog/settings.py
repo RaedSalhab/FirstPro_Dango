@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'news.apps.NewsConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -76,18 +77,14 @@ WSGI_APPLICATION = 'myBlog.wsgi.application'
 DATABASES = {
     'default': {
             'ENGINE': 'django.db.backends.postgresql_psycopg2',
-            'NAME': 'mystore_db',
-            'USER': 'developer',
-            'PASSWORD': '0568547489',
-            'HOST': '127.0.0.1',
-            'PORT': '5432','ENGINE': 'django.db.backends.postgresql_psycopg2',
-            'NAME': 'mystore_db',
+            'NAME': 'article_db',
             'USER': 'developer',
             'PASSWORD': '0568547489',
             'HOST': '127.0.0.1',
             'PORT': '5432',
     }
 }
+
 
 
 # Password validation
