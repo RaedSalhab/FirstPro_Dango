@@ -14,5 +14,6 @@ def detail(request,article_id): #Articles view
         'article_title':obj.article_title,
         'article_text': obj.article_text,
         'pub_date':obj.pub_date,
+        'article_sources':obj.article_sources,
     }
     return render(request, 'news/detail.html',context)
