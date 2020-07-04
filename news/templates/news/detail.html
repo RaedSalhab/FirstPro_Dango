@@ -1,11 +1,12 @@
-<!DOCTYPE html>
-<html>
+{% extends "news/base.html" %}
 <head>
-    <title>Test 2</title>
+    <title>{{article_title}}</title>
 </head>
-<body>
+
+{% block content %}
+    <!-- Content Goes here -->
     <h1>{{article_title}}</h1>
     <div>{{article_text}}</div>
     <h6>{{pub_date}}</h6>
-</body>
-</html>
+{% endblock %}
+
