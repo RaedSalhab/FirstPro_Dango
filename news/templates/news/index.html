@@ -38,7 +38,7 @@
                 <div class="card mb-4">
                     <div class="card-body">
                         <h2 class="card_title">{{item.article_title}}</h2>
-                        <p class="card-text">{{item.article_text|slice:":200"}}</p>
+                        <p class="card-text">{% autoescape off %}{{item.article_text|slice:":200"}}{% endautoescape %}</p>
                           <a href="{% url 'detail' item.id %}" class="btn btn-primary"> قراءة المزيد...</a>
                     </div>
                 </div>
