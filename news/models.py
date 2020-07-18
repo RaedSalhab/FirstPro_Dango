@@ -10,7 +10,7 @@ class Article(models.Model):
     article_sources = models.CharField(max_length=2000, default='Resources')
 
     def __str__(self):
-        return self.article_text
+        return self.article_title
     def was_published_recently(self):
         return self.pub_date >= timezone.now() - datetime.timedelta(days=1)
 
