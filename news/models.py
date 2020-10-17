@@ -6,6 +6,7 @@ from django.utils import timezone
 class Article(models.Model):
     article_title = models.CharField(max_length=100, default='SOME STRING')
     article_text = models.TextField()
+    article_brief = models.CharField(max_length=200, default='brief')
     article_publisher = models.CharField(max_length=100, default='Name')
     article_class = models.CharField(max_length=100, default='Unclassified')
     pub_date = models.DateTimeField('date published')
